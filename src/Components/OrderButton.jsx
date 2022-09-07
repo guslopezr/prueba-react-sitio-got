@@ -2,7 +2,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 // import Button  from "react-bootstrap";
 
 
-function OrderButton({usuario,setUsuarios, ordenAz}) {
+function OrderButton({setPersonajes, ordenAz}) {
     return (
       <>
   
@@ -10,7 +10,7 @@ function OrderButton({usuario,setUsuarios, ordenAz}) {
       <p>Ordena los nombres de los personajes alfabéticamente</p>
         <button
           className="btn btn-dark"
-          onClick={() => setUsuarios(ordenAz.sort((a, b) => usuario.firstName.localeCompare(usuario.firstName)))}> A - Z </button>
+          onClick={() => setPersonajes(ordenAz.sort((a, b) => a.firstName.localeCompare(a.firstName)))}> Ordenar </button>
       </div>
       </>
     );
