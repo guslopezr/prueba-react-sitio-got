@@ -1,4 +1,4 @@
-# LINKS IMPORTANTES:
+# LINKS IMPORTANTES PARA REVISIÓN DEL TRABAJO DE DESAFÍO LATAM:
 
 Link a video en Youtube con explicación del trabajo: https://youtu.be/m-VcW7ETjr8 \
 Link al repositorio de Vercel donde se puede ejecutar la aplicación: https://prueba-react-sitio-got.vercel.app/
