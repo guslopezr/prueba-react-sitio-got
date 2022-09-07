@@ -23,6 +23,7 @@ function MiApi() {
       .catch((error) => {
         console.log(error);
       });
+
   };
 
   const handleChange = (e) => {
@@ -30,6 +31,11 @@ function MiApi() {
     filtrar(e.target.value);
   };
 
+//  const sortPersonajes = personajes.sort()
+ // console.log(sortPersonajes)
+
+  
+  
   const filtrar = (terminoBusqueda) => {
     var resultadosBusqueda = tablaPersonajes.filter((elemento) => {
       if (
@@ -49,18 +55,22 @@ function MiApi() {
            .toString()
            .toLowerCase()
            .includes(terminoBusqueda.toLowerCase())
-      ) {
+      )   
+      
+      {
         return elemento;
-      }
+      } 
     });
     setPersonajes(resultadosBusqueda);
   };
 
-  useEffect(() => {
+    useEffect(() => {
     peticionGet();
-    setOrdenAz(tablaPersonajes);
-  }, []);
+    setOrdenAz(personajes);
+//    console.log(setOrdenAz)
+     }, []);
 
+     
   return (
     
     <div className="appContainer">
@@ -109,4 +119,4 @@ function MiApi() {
 
 }
 
-export default MiApi;
+export default MiApi; 

@@ -10,7 +10,7 @@ function OrderButton({setPersonajes, ordenAz}) {
       <p>Ordena los nombres de los personajes alfabéticamente</p>
         <button
           className="btn btn-dark"
-          onClick={() => setPersonajes(ordenAz.sort((a, b) => a.firstName.localeCompare(a.firstName)))}> Ordenar </button>
+          onClick={() => setPersonajes(ordenAz.sort((a, b) => a.firstName.localeCompare(b.firstName)))}> Ordenar </button>
       </div>
       </>
     );
